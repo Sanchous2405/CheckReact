@@ -63,10 +63,8 @@ function App() {
       <button style={btnStyle} onClick={handleDec}>
         Отнять
       </button>
-      {/* <button style={btnStyle} >
-        Проверка
-      </button> */}
-      <p>Вы ввели {count % 2 === 0 ?"четное":"нечетное" } число!</p>
+
+      <p>Вы ввели {count % 2 === 0 ? "четное" : "нечетное"} число!</p>
     </div>
   );
 }
