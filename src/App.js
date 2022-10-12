@@ -11,7 +11,7 @@ function App() {
   const handleDec = () => {
     setCount(count - 1);
   };
-
+ const check= count % 2 === 0 ? "четное число" : "нечетное число"
   return (
     <div className="div">
       <p> {count}</p>
@@ -19,7 +19,7 @@ function App() {
       <Button text={"Отнять"} func={handleDec} />
       <Display
         text={"Вы ввели "}
-        func={count % 2 === 0 ? "четное число" : "нечетное число"}
+        func={check}
       />
     </div>
   );
